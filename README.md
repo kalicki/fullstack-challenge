@@ -20,7 +20,7 @@ Client (Dashboard) --> AygaCar API --> Tezla API
 The Tezla API server is running at `https://my-json-server.typicode.com/kalicki/ayga-fullstack-internship`. The documentation below provides more details on the exact request/responses. Here is an example:
 
 ```
-$ curl https://my-json-server.typicode.com/kalicki/ayga-fullstack-internship/getVehicleInfoService/1357
+$ curl https://my-json-server.typicode.com/kalicki/ayga-fullstack-internship/getVehicleInfo/1357
        -X GET
        -H 'Content-Type: application/json'
 ```
