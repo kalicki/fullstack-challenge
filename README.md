@@ -2,14 +2,15 @@
 
 The Tezla Motors is car company has a confusing API. It returns badly structured JSON which isn't always consistent. AygaCar needs to adapt the API into a cleaner format. Instructions
 
-There are two API specifications provided below, the Tezla API and the AygaCar API Spec. Your task is to implement the AygaCar spec by making HTTP requests to the Tezla API.
+There are two API specifications provided below, the Tezla API and the AygaCar API Spec. Your task is to implement the AygaCar spec by making HTTPs requests to the Tezla API.
 
 Your tasks are as follows:
 - Implement the `AygaCar API` and `AygaCar Dashboard (Bonus)` specification using any frameworks or libraries as necessary;
   - `API`: We'd like you to show your knowledge or superpowers with modern backend frameworks, eg: (ExpressJS) NodeJS, (Rails) Ruby or others.
-  - `Dashboard (Bonus)`: You are free to show your superpowers.
+  - `Dashboard`: You are free to show your superpowers - (Bonus).
 - Write your code to be well structured and documented;
-- Provide tests for implementation.
+- Provide tests for implementation - (Bonus).
+- Please, send a Pull Request (PR) with your proposal.
 
 
 The flow looks like this:
@@ -238,4 +239,4 @@ Example
 
 ### Installation
 **>>> Describe here how to run your code**
-# ayga-fullstack-internship
+
