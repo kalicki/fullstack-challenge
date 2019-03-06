@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>AYGA William internship</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script>
+      $( document ).ready(function() {
+        $("#getInfoButton").click(function() {
+          $("#loadedContent").html("");
+          var id = $("#vehicleID").val();
+          $.get("http://localhost:3003/vehicles/"+id, function( data ) {
+               printIntoHtml(data);
+             });
+          $.get("http://localhost:3003/vehicles/"+id+"/doors", function( data ) {
+                printIntoHtml(data);
+             });
+          $.get("http://localhost:3003/vehicles/"+id+"/battery", function( data ) {
+                printIntoHtml(data);
+             });
+          $.get("http://localhost:3003/vehicles/"+id+"/fuel", function( data ) {
+                printIntoHtml(data);
+             });
+          $.get("http://localhost:3003/vehicles/"+id+"/location", function( data ) {
+                printIntoHtml(data);
+             });
+         });
+      });
+
+      function printIntoHtml(data) {
+        $("#loadedContent").append('<p>'+JSON.stringify(data, null, 2)+'</p></br>');
+      }
+    </script>
+</head>
+<body>
+  <div style="margin:100px;">
+    <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">AYGA William internship</a>
+  </div>
+</nav>
+    <div class="jumbotron"  style="padding:40px;">
+      <h1>Vehicles API</h1>
+      <input id="vehicleID" type="text"/>
+      <a id="getInfoButton" class="btn btn-primary btn-lg" href="#" role="button">Get Info</a></p>
+      <div id="loadedContent">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
