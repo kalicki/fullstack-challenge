@@ -235,8 +235,27 @@ Example
 ```
 
 ### Documentation
-**>>> Describe here your ideas, documentation and anything extra**
+
+**The Idea**
+The Idea was to create a new API (Ayga) to consume the Tezla API, and provide a few new endPoints as requested in the challenge. This API was successfully created using Node.js, coded in a simple and single file: "server.js". Also, I tried to implement a UI (the Dashboard) using React.js, to consume a single endpoint from the Ayga API, and then it should render the information on the screen.
+
+It was also part of my plan, to implement a few tests using Mocha, Supertest, and Jest, but unfortunately I didn't have time to try it.
+
+I uploaded a picture (ideaPic.jpg) of the plan that I was intended to to. You can check this picture on the main folder of this project.
+
+**Api Documentation**
+I used a program called "Postman" to document the API.
+You can view the documentation by importing the file: "DocumentationAYGA.postman_collection.json" inside your own postman workspace, or you can access it through this link:
+https://documenter.getpostman.com/view/6819612/S11PqwUX#intro
+
+**The Dashborad (UI)**
+I've never programmed with React.js before, but I took this opportunity to try to implement something new with react Components. Unfortunately, I couldn't finish the Dashboard, but I was able to learn, render a few things on the webpage, and make some calls on the API.
 
 ### Installation
-**>>> Describe here how to run your code**
-
+1.Open the terminal inside the main project folder
+2.Type $ npm install
+3.Open another terminal inside the folder "dashboard"
+4.Type $ npm install  (this might take a few minutes)
+5.Back in the first terminal, type $ npm start
+6.The Program should run both the API and the UI
+7.You can now test the endpoints using the endpoints documented in the Postman file.

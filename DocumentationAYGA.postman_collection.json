@@ -1,0 +1,304 @@
+{
+	"info": {
+		"_postman_id": "076d6044-3c87-42d1-b007-6de94eb92830",
+		"name": "DocumentationAYGA",
+		"description": "Full Stack Engineering Internship - Coding Challenge (Ayga)\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AygaCar",
+			"item": [
+				{
+					"name": "vehicles/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/vehicles/1357",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehicles",
+								"1357"
+							]
+						},
+						"description": "# vehicles/:id \r\n{\r\n  \"vin\": \"1357\",\r\n  \"color\": \"Metallic Silver\",\r\n  \"doorCount\": 4,\r\n  \"driveTrain\": \"v8\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "vehicles/:id/doors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/vehicles/1357/doors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehicles",
+								"1357",
+								"doors"
+							]
+						},
+						"description": "# vehicles/:id/doors\r\n[\r\n  {\r\n    \"location\": \"frontLeft\",\r\n    \"locked\": false\r\n  },\r\n  {\r\n    \"location\": \"frontRight\",\r\n    \"locked\": true\r\n  },\r\n  {\r\n    \"location\": \"backLeft\",\r\n    \"locked\": false\r\n  },\r\n  {\r\n    \"location\": \"backRight\",\r\n    \"locked\": false\r\n  }\r\n]"
+					},
+					"response": []
+				},
+				{
+					"name": "vehicles/:id/battery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/vehicles/1357/battery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehicles",
+								"1357",
+								"battery"
+							]
+						},
+						"description": "# vehicles/:id/battery\r\n{\r\n  \"percent\": 99\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "vehicles/:id/fuel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/vehicles/1357/fuel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehicles",
+								"1357",
+								"fuel"
+							]
+						},
+						"description": "# vehicles/:id/fuel\r\n{\r\n  \"percent\": 50\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "vehicles/:id/location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/vehicles/1357/location",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehicles",
+								"1357",
+								"location"
+							]
+						},
+						"description": "# vehicles/:id/location\r\n{\r\n  \"latitude\":\t\"-43.9509\",\r\n  \"longitude\":\t\"-34.4618\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/vehicles/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"vehicles",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TezlaCar",
+			"item": [
+				{
+					"name": "getVehicleInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://my-json-server.typicode.com/kalicki/ayga-fullstack-internship/getVehicleInfo/",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"kalicki",
+								"ayga-fullstack-internship",
+								"getVehicleInfo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getSecurityStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://my-json-server.typicode.com/kalicki/ayga-fullstack-internship/getSecurityStatus",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"kalicki",
+								"ayga-fullstack-internship",
+								"getSecurityStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEnergyStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://my-json-server.typicode.com/kalicki/ayga-fullstack-internship/getEnergyStatus",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"kalicki",
+								"ayga-fullstack-internship",
+								"getEnergyStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLocationStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://my-json-server.typicode.com/kalicki/ayga-fullstack-internship/getLocationStatus",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"kalicki",
+								"ayga-fullstack-internship",
+								"getLocationStatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "db",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://my-json-server.typicode.com/kalicki/ayga-fullstack-internship/db",
+							"protocol": "https",
+							"host": [
+								"my-json-server",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"kalicki",
+								"ayga-fullstack-internship",
+								"db"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

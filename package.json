@@ -1,0 +1,17 @@
+{
+  "name": "node-react",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd dashboard && npm start",
+    "server": "node server.js",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "test": "npm run server"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
