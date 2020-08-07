@@ -1,4 +1,4 @@
-# Full Stack Engineering Internship - Coding Challenge (Ayga)
+# Full Stack - Coding Challenge 
 
 The Tezla Motors is car company has a confusing API. It returns badly structured JSON which isn't always consistent. AygaCar needs to adapt the API into a cleaner format. Instructions
 
@@ -240,3 +240,6 @@ Example
 ### Installation
 **>>> Describe here how to run your code**
 
+- - - 
+Others: 
+https://github.com/CollabCodeTech/backend-challenges
